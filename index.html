@@ -3,12 +3,77 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width intial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Pacifico&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/main.css">
-<title></title>
+<script src="https://kit.fontawesome.com/687313184e.js" crossorigin="anonymous"></script>
+<title>Rebuilding as Responsive</title>
 </head>
 
 <body>
+    <header>
+        <div><!--Put background color and border bottom here-->
+            <div class="wrapper row">
+                <div class="col-sm-12 col-md- col-lg-">
+                    <img src="img/logo-ding.jpg" alt="Ding" width="100" data-rjs="2">
+                </div>
+                <nav class="col-sm-12 col-md- col-lg-">
+                    <ul>
+                        <li><a href="#systems">Systems</a></li>
+                        <li><a href="#layout">Layout</a></li>
+                        <li><a href="#testing">Testing</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div><!--Put background color here-->
+            <div class="wrapper"><!--Put background image here-->
+                <h1>atomic design</h1>
+                <div class="col-sm-12 col-md- col-lg-4">
+                    <p>We're not designing pages, we're designing systems of components.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="systems">
+            <div class="wrapper"><!--text align center for large display-->
+                <header>
+                    <h2>design systems</h2>
+                </header>
+                <p>A lot has been said about creating design systems, and much of it focuses on establishing foundations for color, typography, grids, texture and the like. This type of thinking is certainly important, but I'm slightly less interested in these aspects of design because ultimately they are and will always be subjective. Atomic design is methodology for creating design systems. There are five distinct levels in atomic design: Atoms, Molecules, Organisms, Templates, Pages.</p>
+                <div class="row">
+                    <section class="col-sm-12 col-md- col-lg-4">
+                        <header>
+                            <i class="fa-solid fa-atom"></i>
+                            <h2>atoms</h2>
+                        </header>
+                        <p>Atoms are the basic building blocks of matter. Applied to web interfaces, atoms are our HTML tags, such as a form label, an input or a button. Atoms can also include color palettes, fonts and animations. They're fairly abstract and often not terribly useful on their own. However, they're good as a reference in the context of a pattern library as you can see all your global styles laid out at a glance.</p>
+                    </section>
+                    <section class="col-sm-12 col-md- col-lg-4">
+                        <header>
+                            <i class="fa-solid fa-dna"></i>
+                            <h2>molecules</h2>
+                        </header>
+                        <p>Things start getting more interesting and tangible when we start combining atoms together. Molecules are groups of atoms bonded together and are the smallest fundamental units of a compound. These molecules take on their own properties and serve as the backbone of our design systems.</p>
+                    </section>
+                    <section class="col-sm-12 col-md- col-lg-4">
+                        <header>
+                            <i class="fa-solid fa-bacteria"></i>
+                            <h2>organisms</h2>
+                        </header>
+                        <p>Molecules give us some building blocks to work with, and we can now combine them together to form organisms. Organisms are groups of molecules joined together to form a relatively complex, distinct section of an interface. Organisms can consist of similar and/or different molecule types. Building up from molecules to organisms encourages creating standalone, portable, reusable components.</p>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="js/functions.js"></script>
