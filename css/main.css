@@ -18,6 +18,8 @@
 
 6.0 - Components: specific designed components
         6.0 - Components: specific designed components
+        - Header
+        - Images
         - Col-Sm-Ids
         - Col-Md-Ids
         - Col-Lg-IDs
@@ -124,6 +126,10 @@ html {
         [class*='col-'] {
                 padding: 8px;
         }
+        [col*='col-'] [col*='col-'] {
+                margin-left: -8px;
+                margin-right: -8px;
+        }
         .col-md-1 {
                 width: calc(100% * 1 / 12);
         }
@@ -212,7 +218,60 @@ html {
 /*--------------------------------------------------------------
     6.0 - COMPONENTS
 -------------------------------------------------------------- */
+/* ----- HEADER ----- */
+body > header {
+        text-align: center;
+}
+body > header > div:first-child {
+        background-color: #fff;
+        border-bottom: 4px solid #FFD8DB;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+}
+body > header > div:last-child {
+        background-color: #FFD8DB;
+        margin-top: 128px;
+}
+/* ----- IMAGES ----- */
+img {
+        margin-bottom: -70px;
+}
+body > header > div:last-child > div {
+        background: url(../img/balloons.jpg) no-repeat;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        -ms-background-size: contain;
+        background-size: contain;
+        padding: 100px 0px 0px;
+}
+/* ----- NAVIGATION ----- */
 
+nav ul {
+        list-style-type: none;
+}
+header > div > div > nav li {
+        display: inline-block;
+        margin: 25px 10px 0px 0px;
+}
+nav li > a {
+        font: 16px 'Open Sans', sans-serif;
+        text-decoration: none;
+        color: #00B0A3;
+        font-weight: 400;
+        background-color: #fff;
+        padding: 4px 8px;
+        border-radius: 16px;
+}
+nav li > a:hover {
+        text-decoration: none;
+        color: #003833;
+        background-color: #FFD8DB;
+        padding: 4px 8px;
+        border-radius: 16px;
+}
 /*--------------------------------------------------------------
     7.0 - UTILITY
 -------------------------------------------------------------- */
