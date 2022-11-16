@@ -405,6 +405,9 @@ footer > div > section > p {
 footer > div > section > h4 {
         margin: 40px 0px 0px 0px;
 }
+footer > div > section > p {
+        text-decoration: underline;
+}
 /*--------------------------------------------------------------
     7.0 - UTILITY
 -------------------------------------------------------------- */
