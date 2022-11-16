@@ -27,6 +27,7 @@
         - Footer
 
  7.0 - Utilities:
+        - Alignmennt
         - Screen Reader   
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -268,7 +269,7 @@ body > header > div:first-child {
 }
 body > header > div:last-child {
         background-color: #FFD8DB;
-        margin-top: 125px;
+        margin-top: 115px;
 }
 /* ----- IMAGES ----- */
 img {
@@ -298,6 +299,21 @@ body > header > div:last-child > div {
         font-size: 3rem;
         color: #00515D;
 }
+/* ----- COL-MD-IDS ----- */
+@media screen and (min-width: 768px) {
+        body > header > div > div > div > img {
+                width: 110px;
+        }
+        body > header > div:last-child {
+                margin-top: 90px;
+        }
+        nav li > a {
+                font-size: 14px;
+        }
+        #systems > div {
+                text-align: center;
+        }
+}
 /* ----- COL-LG-IDS ----- */
 @media screen and (min-width: 1024px) {
         img {
@@ -307,7 +323,7 @@ body > header > div:last-child > div {
                 text-align: right;
         }
         body > header > div:last-child {
-                margin-top: 118px;
+                margin-top: 100px;
         }
         h1 {
                 font-size: 6rem;
@@ -317,10 +333,7 @@ body > header > div:last-child > div {
                 margin: 0 auto;
         }
         body > header > div:last-child > div > div > p {
-                font-size: 1.6srem;
-        }
-        #systems > div {
-                text-align: center;
+                font-size: 1.6rem;
         }
         #systems > div:last-child i {
                 font-size: 3rem;
@@ -337,9 +350,10 @@ body > header > div:last-child > div {
         }
         footer > div {
                 display: inline;
+                text-align: left;
         }
         footer > div > nav > ul {
-                margin: 0px;
+                margin: -170px;
         }
         footer > div > section > img {
                 width: 129px;
