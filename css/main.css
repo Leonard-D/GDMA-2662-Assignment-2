@@ -24,6 +24,7 @@
         - Col-Md-Ids
         - Col-Lg-IDs
         - Navigation
+        - Footer
 
  7.0 - Utilities:
         - Screen Reader   
@@ -73,7 +74,8 @@ h2 {
 h3 {
         font-size: 1.2rem;
         font-weight: 700;
-        color: #00B0A3; 
+        color: #00B0A3;
+        margin: 0 auto;
 }
 h4 {
         font-size: 1.2rem;
@@ -284,7 +286,6 @@ body > header > div:last-child > div {
 #systems > div:last-child i {
         font-size: 1.7rem;
         color: #00515D;
-        margin-top: 20px;
 }
 #layout > section:first-of-type {
         text-align: center;
@@ -318,8 +319,33 @@ body > header > div:last-child > div {
         body > header > div:last-child > div > div > p {
                 font-size: 1.6srem;
         }
-        #systems > div:first-of-type {
+        #systems > div {
                 text-align: center;
+        }
+        #systems > div:last-child i {
+                font-size: 3rem;
+        }
+        #layout {
+                flex-direction: row-reverse;
+        }
+        #testing > div {
+                background: url(../img/rainbow.jpg) no-repeat;
+                background-size: contain;
+        }
+        #benefits > div {
+                text-align: left;
+        }
+        footer > div {
+                display: inline;
+        }
+        footer > div > nav > ul {
+                margin: 0px;
+        }
+        footer > div > section > img {
+                width: 129px;
+        }
+        footer .row {
+                flex-direction: column-reverse ;
         }
 }
 /* ----- NAVIGATION ----- */
@@ -347,7 +373,11 @@ nav li > a:hover {
         padding: 4px 8px;
         border-radius: 16px;
 }
-
+/* ----- FOOTER ----- */
+footer {
+        border-top: 10px solid #FFD8DB;
+        background-color: #fff;
+}
 footer > div > nav li {
         text-align: center;
         margin: 0px 30px 25px 0px;
